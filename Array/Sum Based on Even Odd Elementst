@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n= sc.nextInt();
+        int arr[] = new int[n];
+        int ecount =0;
+        int ocount =0;
+        int ec=0;
+        int oc =0;
+        for(int i=0; i<n;i++){
+            arr[i] = sc.nextInt();
+        if(arr[i]%2==0)
+            ecount+=arr[i];
+        else
+            ocount+=arr[i];
+            if(i%2==0)
+                ec+=arr[i];
+            else
+                oc+=arr[i];
+            
+    }
+    System.out.print(ecount +" " +ocount +" "+ec +" " +oc);
+    
+    }     
+}
